@@ -4360,3 +4360,16 @@ file-types = [ { glob = "dunst/dunstrc" } ]
 [[grammar]]
 name = "dunstrc"
 source = { git = "https://github.com/rotmh/tree-sitter-dunstrc", rev = "9cb9d5cc51cf5e2a47bb2a0e2f2e519ff11c1431" }
+
+[[language]]
+name = "alloy"
+scope = "source.alloy"
+file-types = ["alloy"]
+comment-token = "//"
+block-comment-tokens = { start = "/*", end = "*/" }
+indent = { tab-width = 2, unit = "  " }
+grammar = "alloy"
+
+[[grammar]]
+name = "alloy"
+source = { git = "https://github.com/mattsre/tree-sitter-alloy", rev = "4d4e08687ceb31b0501fea8000ecca09649c7f3e" }
