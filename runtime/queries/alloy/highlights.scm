@@ -1,27 +1,19 @@
+(identifier) @variable
+
+; Literals
+; --------
+
+(boolean) @constant.builtin.boolean
 (comment) @comment
-
-[
-  "-"
-  "="
-] @operator
-
-[
-  "("
-  ")"
-  "["
-  "]"
-  "{"
-  "}"
-] @punctuation.bracket
-
-[
-  ":"
-  "."
-  ","
-  ";"
-] @punctuation.delimiter
-
-
 (string) @string
 (number) @constant.numeric
-(boolean) @constant.builtin.boolean
+
+; Punctuation
+; --------
+
+"," @punctuation.delimiter
+"=" @operator
+"[" @punctuation.bracket
+"]" @punctuation.bracket
+"{" @punctuation.bracket
+"}" @punctuation.bracket
